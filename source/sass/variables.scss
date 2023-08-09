@@ -10,12 +10,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-elephant:                    #2d383f;
+$color-white:                       #ffffff;
+$color-navy-blue:                   #0266c1;
+$color-resolution-blue:             #1C3374;
+
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$gradient-one: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+$gradient-two: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
 
 // Typography
 // ---------------------------------
@@ -44,15 +48,25 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-375:                            375px;
 $vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-1200:                           1200px;
 
 // Retina
 // ---------------------------------
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Резина
+// ---------------------------------
+
+//desktop
+$padding-desktop: percentage(calc(120/1440));
+
+//tablet
+$padding-tablet: percentage(calc(45/768));
+
+$margin-logo: percentage(calc(141/768));
+
+//mobile
+$padding-mobile: percentage(calc(15/320));
