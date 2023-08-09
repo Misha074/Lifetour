@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lifetour - организация походов в горы">
+  <title>Lifetour</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-300.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-300.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-regular.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-500.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-600.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-700.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-800.woff" as="font" type="font/woff" crossorigin="">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="visally-hidden">Lifetour - организация походов в горы</h1>
+      <div class="header__main-header header__main-header--nojs">
+        <div class="header__logo-wrapper header__logo-wrapper--invert">
+          <a class="header__home-link" href="index.html">
+            <img src="./img/logo-header-desktop.png" width="205" height="62"
+              alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге.">
+          </a>
+        </div>
+        <div class="header__nav nav nav--closed nav--nojs">
+          <button class="nav__toggle" type="button">
+            <svg width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-menu"></use>
+            </svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="nav__wrapper nav__wrapper--closed">
+            <ul class="nav__list nav__list--nojs">
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Туры
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Обучение
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  О нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Фотографии
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <a class="header__contact-link" href="tel:+78007253232">8 800 725 32 32</a>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__slider">
+        <!-- <button class="header__button-prev btn btn--slider" data-swiper-header-prev aria-label="предыдущий слайд.">
+          <svg width="16" height="32" viewBox="0 0 16 32" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button> -->
+        <div class="hero__swiper swiper">
+          <ul class="swiper-wrapper hero__swiper-wrapper">
+            <li class="swiper-slide hero__slide hero__slide--1" tabindex="0" data-slide-swiper-hero>
+              <div class="hero__slide-info container">
+                <h2 class="hero__slide-title">
+                  <!--Здесь и в последующих заголовках слайдов преднамеренно вставляю бр. Такаие переносы расставлены дизайнером на всех версиях макета. Ничего поддерживать не нужно, так что сложностей не возникнет-->
+                  Захватывающие<br>
+                  вершины Кавказа
+                </h2>
+                <p>
+                  В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                  восход на&nbsp;вершину горы Чегет.
+                </p>
+                <a class="hero__slide-more-link btn" href="#">
+                  Смотреть тур
+                </a>
+                <div class="hero__slide-tour-details">
+                  <span>
+                    <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                    </svg>
+                    6 дней/5 ночей
+                  </span>
+                  <span>
+                    <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-level"></use>
+                    </svg>
+                    Высокая сложность
+                  </span>
+                </div>
+                <div class="hero__slide-special-content">
+                  <div class="hero__stretch-container">
+                    <div class="hero__video-wrapper" id="player">
+                      <div class="hero__iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?mute=1" title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="hero__poster-wrapper hero__poster-wrapper--nojs">
+                        <picture>
+                          <source media="(min-width: 1200px)"
+                            srcset="img/header-slider/header-video-poster-desktop.webp 1x, img/header-slider/header-video-poster-desktop@2x.webp 2x">
+                          <source media="(min-width: 768px)"
+                            srcset="img/header-slider/header-video-poster-tablet.webp 1x, img/header-slider/header-video-poster-tablet@2x.webp 2x">
+                          <img width="482" height="317" src="./img/header-slider/header-video-poster-desktop.webp"
+                            alt="текст заглушка альта">
+                        </picture>
+                        <button class="hero__play-button" type="button">
+                          <span class="visually-hidden">Запустить видео</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide hero__slide hero__slide--2" tabindex="0" data-slide-swiper-hero>
+              <div class="hero__slide-info container">
+                <h2 class="hero__slide-title">
+                  Невероятная<br>
+                  природа Камчатки
+                </h2>
+                <p>
+                  Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                  уголков дикой природы в мире.
+                </p>
+                <a class="hero__slide-more-link btn" href="#">
+                  Смотреть тур
+                </a>
+                <div class="hero__slide-tour-details">
+                  <span>
+                    <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                    </svg>
+                    9 дней/10 ночей
+                  </span>
+                  <span>
+                    <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-level"></use>
+                    </svg>
+                    Средняя сложность
+                  </span>
+                </div>
+                <div class="hero__slide-special-content">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/header-slider/header-photos-desktop.webp 1x, img/header-slider/header-photos-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/header-slider/header-photos-tablet.webp 1x, img/header-slider/header-photos-tablet@2x.webp 2x">
+                    <img width="410" height="459" src="./img/header-slider/header-photos-desktop.webp"
+                      alt="текст заглушка альта">
+                  </picture>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide hero__slide hero__slide--3" tabindex="0" data-slide-swiper-hero>
+              <div class="hero__slide-info container">
+                <h2 class="hero__slide-title">
+                  Магические пейзажи<br>
+                  Алтайского Края
+                </h2>
+                <p>
+                  Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух
+                  ландшафтов Алтайских гор.
+                </p>
+                <a class="hero__slide-more-link btn" href="#">
+                  Смотреть тур
+                </a>
+                <div class="hero__slide-tour-details">
+                  <span>
+                    <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                    </svg>
+                    8 дней/7 ночей
+                  </span>
+                  <span>
+                    <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#icon-level"></use>
+                    </svg>
+                    Легкая сложность
+                  </span>
+                </div>
+                <div class="hero__slide-special-content">
+                  <div class="hero__audio-wrapper audio">
+                    <audio controls>
+                      <source src="./img/audio/Depeche Mode - Precious.mp3" type="audio/mp3">
+                      <p>
+                        Ваш браузер не поддерживает встроенное аудио. Попробуйте послушать
+                        <a href="https://music.yandex.ru/album/25474374?dir=desc&activeTab=track-list"></a> файл.
+                      </p>
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__pagination-wrapper container">
+          <div class="hero__slider-pagination swiper-pagination">
+          </div>
+
+
+        </div>
+        <!-- <button class="header__button-next btn btn--slider" data-swiper-header-next aria-label="следующий слайд.">
+          <svg width="16" height="32" viewBox="0 0 16 32" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button> -->
+      </div>
+    </section>
+    <section class="tours">
+      <div class="tours__container container">
+        <h2 class="tours__header" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+        <div class="tours__slider">
+          <button class="tours__button tours__button--prev btn" data-swiper-tours-prev aria-label="предыдущий слайд.">
+            <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <div class="tours__swiper swiper">
+            <ul class="swiper-wrapper tours__swiper-wrapper">
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Кавказ</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        4 дня
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      3 ночи
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Путешествие вокруг Эльбруса</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--3"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">12.06-19.06</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Алтай</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        14 дней
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      13 ночей
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Путь к подножию Белухи</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--2"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">14.06-23.06</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 25 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Адыгея</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        7 дней
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      6 ночей
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Через Фишт к&nbsp;Черному морю</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--3"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">15.07-19.07</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 22 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Кавказ</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        4 дня
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      3 ночи
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Путешествие вокруг Эльбруса2</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--3"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">12.06-19.06</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Алтай</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        14 дней
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      13 ночей
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Путь к подножию Белухи2</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--2"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">14.06-23.06</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 25 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <div class="tour__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                    <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                  <span class="tour__image-mask"></span>
+                </div>
+                <div class="tour__text-wrapper tour-info">
+                  <div class="tour-info__row tour-info__row--header">
+                    <a class="tour-info__region-link btn" href="#">
+                      <svg width="9" height="12" viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-baloon-filled"></use>
+                      </svg>
+                      <span class="tour-info__region-name">Адыгея</span>
+                    </a>
+                    <div class="tour-info__lasting tour-info__lasting--days">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span>
+                        7 дней
+                      </span>
+                    </div>
+                    <div class="tour-info__lasting tour-info__lasting--nights">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      6 ночей
+                    </div>
+                  </div>
+                  <header class="tour-info__header">Через Фишт к&nbsp;Черному морю2</header>
+                  <div class="tour-info__row tour-info__row--footer">
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Сложность:</span>
+                      <span class="tour-info__difficulty stars stars--3"></span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Даты набора:</span>
+                      <span class="tour-info__item-text">15.07-19.07</span>
+                    </div>
+                    <div class="tour-info__item">
+                      <span class="tour-info__item-title">Группа:</span>
+                      <span class="tour-info__item-text">до 22 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="tours__button tours__button--next btn" data-swiper-tours-next aria-label="следующий слайд.">
+            <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <a class="tours__more-link" href="#">
+          Показать все туры
+          <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-arrow-right-short"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="training">
+      <div class="training__container container">
+        <h2 class="training__header" data-shadow="Обучение">Обучение</h2>
+        <p class="training__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+        <div class="training__slider">
+          <p class="training__slider-header">Наши инструкторы</p>
+          <button class="training__button training__button--prev btn" data-swiper-training-prev aria-label="предыдущий слайд.">
+            <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <div class="training__swiper swiper">
+            <ul class="swiper-wrapper training__swiper-wrapper">
+              <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
+                <div class="instructor__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/instructors/instructor-aleksandr-prokofiev-desktop.webp 1x, img/instructors/instructor-aleksandr-prokofiev-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/instructors/instructor-aleksandr-prokofiev-tablet.webp 1x, img/instructors/instructor-aleksandr-prokofiev-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/instructors/instructor-aleksandr-prokofiev-mobile.webp 1x, img/instructors/instructor-aleksandr-prokofiev-mobile@2x.webp 2x">
+                    <img width="238" height="212" src="./img/instructors/instructor-aleksandr-prokofiev-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                </div>
+                <div class="instructor__text-wrapper">
+                  <div class="instructor__header">
+                    <p class="instructor__name">Александр Прокофьев</p>
+                    <ul class="instructor__socials-list">
+                      <li class="instructor__social-item">
+                        <a class="instructor__social-link" href="#" alt="ссылка на страницу инструктора Вконтакте">
+                          <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="instructor__info">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                </div>
+              </li>
+
+
+              <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
+                <div class="instructor__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/instructors/instructor-svetlana-afinogenova-desktop.webp 1x, img/instructors/instructor-svetlana-afinogenova-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/instructors/instructor-svetlana-afinogenova-tablet.webp 1x, img/instructors/instructor-svetlana-afinogenova-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/instructors/instructor-svetlana-afinogenova-mobile.webp 1x, img/instructors/instructor-svetlana-afinogenova-mobile@2x.webp 2x">
+                    <img width="238" height="212" src="./img/instructors/instructor-svetlana-afinogenova-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                </div>
+                <div class="instructor__text-wrapper">
+                  <div class="instructor__header">
+                    <p class="instructor__name">Светлана Афиногенова</p>
+                    <ul class="instructor__socials-list">
+                      <li class="instructor__social-item">
+                        <a class="instructor__social-link" href="#" alt="ссылка на страницу инструктора Вконтакте">
+                          <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="instructor__info">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                </div>
+              </li>
+
+              <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
+                <div class="instructor__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/instructors/instructor-nadezda-kolesnichenko-desktop.webp 1x, img/instructors/instructor-nadezda-kolesnichenko-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/instructors/instructor-nadezda-kolesnichenko-tablet.webp 1x, img/instructors/instructor-nadezda-kolesnichenko-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/instructors/instructor-nadezda-kolesnichenko-mobile.webp 1x, img/instructors/instructor-nadezda-kolesnichenko-mobile@2x.webp 2x">
+                    <img width="238" height="212" src="./img/instructors/instructor-nadezda-kolesnichenko-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                </div>
+                <div class="instructor__text-wrapper">
+                  <div class="instructor__header">
+                    <p class="instructor__name">Надежда Колесниченко</p>
+                    <ul class="instructor__socials-list">
+                      <li class="instructor__social-item">
+                        <a class="instructor__social-link" href="#" alt="ссылка на страницу инструктора Вконтакте">
+                          <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="instructor__info">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                </div>
+              </li>
+
+              <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
+                <div class="instructor__image-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/instructors/instructor-fedor-kaigorodov-desktop.webp 1x, img/instructors/instructor-fedor-kaigorodov-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/instructors/instructor-fedor-kaigorodov-tablet.webp 1x, img/instructors/instructor-fedor-kaigorodov-tablet@2x.webp 2x">
+                    <source
+                    srcset="img/instructors/instructor-fedor-kaigorodov-mobile.webp 1x, img/instructors/instructor-fedor-kaigorodov-mobile@2x.webp 2x">
+                    <img width="238" height="212" src="./img/instructors/instructor-fedor-kaigorodov-desktop.webp" alt="Текст заглушка альта"
+                      loading="lazy">
+                  </picture>
+                </div>
+                <div class="instructor__text-wrapper">
+                  <div class="instructor__header">
+                    <p class="instructor__name">Федор Кайгородов</p>
+                    <ul class="instructor__socials-list">
+                      <li class="instructor__social-item">
+                        <a class="instructor__social-link" href="#" alt="ссылка на страницу инструктора Вконтакте">
+                          <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="instructor__info">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="training__button training__button--next btn" data-swiper-training-next aria-label="следующий слайд.">
+            <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+    </main>
+    <footer>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
+
+
+<!--
+          <section class="intro">
+          <div class="container">
+            <h1>Тестовая страница.</h1>
+            <p>На данной странице показан пример модальных окон.</p>
+            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
+            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+          </div>
+        </section>
+
+
+
+            <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+-->

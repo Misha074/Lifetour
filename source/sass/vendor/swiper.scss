@@ -41,6 +41,10 @@
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -258,8 +262,8 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px;
-  left: 0;
+  // bottom: 10px;
+  // left: 0;
   width: 100%;
 }
 /* Bullets */

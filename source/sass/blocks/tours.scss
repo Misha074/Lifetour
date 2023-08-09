@@ -1,0 +1,50 @@
+.tours__container {}
+
+.tours__header {
+  @include section-header;
+  margin-top: 123px;
+  margin-bottom: 54px;
+}
+
+.tours__header::before {
+  @include section-header-before;
+}
+
+.tours__slider {
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.tours__button {
+  @include slider-button;
+  top: -89px;
+}
+
+.tours__button--prev {
+  right: 41px;
+}
+
+.tours__button--next {}
+
+.tours__swiper {}
+
+.tours__swiper-wrapper {}
+
+.tours__slide {}
+
+.tours__more-link {
+  font-size: 16px;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+
+  svg {
+    margin-left: 5px;
+    margin-right: -2px;
+  }
+}
