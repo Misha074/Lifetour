@@ -1,0 +1,157 @@
+.training-process__title {
+  margin-top: 51px;
+  margin-bottom: 25px;
+
+  @include vp-1199 {
+    margin-top: 44px;
+    margin-bottom: 26px;
+  }
+
+  @include vp-767 {
+    margin: 39px 0 16px 4px;
+  }
+}
+
+.training-process__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  padding-bottom: 17px;
+
+  @include vp-1199 {
+    grid-template-columns: 220px 240px;
+    column-gap: 135px;
+    row-gap: 63px;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 37px;
+    padding-right: 37px;
+    gap: 1px;
+  }
+}
+
+.training-process__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  svg {
+    margin-right: 15px;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+
+    @include vp-767 {
+      margin-right: 8px;
+    }
+  }
+}
+
+.training-process__item:first-child::after {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    width: 355px;
+    height: 1px;
+    background-color: $color-navy-blue;
+    opacity: 0.1;
+    bottom: -3px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training-process__item:last-child::after {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    width: 355px;
+    height: 1px;
+    background-color: $color-navy-blue;
+    opacity: 0.1;
+    top: -6px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training-process__item--verical-line::after {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: $color-navy-blue;
+    opacity: 0.1;
+    top: 70px;
+    left: 7px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training-process__item::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $color-navy-blue;
+  bottom: -25px;
+  left: 0;
+
+  @include vp-1199 {
+    bottom: -10px;
+  }
+
+  @include vp-767 {
+    width: 13px;
+    height: 13px;
+    bottom: 49%;
+    transform: translateY(54%);
+    left: -33px;
+  }
+}
+
+.training-process__item:nth-child(n + 3)::before {
+  @include vp-1199 {
+    top: -13px;
+  }
+
+  @include vp-767 {
+    top: unset;
+  }
+}
+
+.training-process__item--trees {
+  @include vp-1199 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.training-process__item-text {
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

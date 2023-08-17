@@ -1,7 +1,7 @@
 .btn {
   display: inline-flex;
   justify-content: center;
-  padding: 21px;
+  padding: 20px;
 
   color: $color-white;
   font-weight: 500;
@@ -9,26 +9,30 @@
   line-height: 1em;
 
   background-color: $color-navy-blue;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: red;
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border-color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
   }
 
   &:disabled {
-    opacity: 0.5;
-
+    opacity: 0.2;
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
-
   @include vp-767 {
-    padding: 18px 21px;
+    padding: 18px 21px 16px;
   }
 }

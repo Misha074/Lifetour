@@ -6,7 +6,11 @@ import './modules/youtube-video/youtube-video';
 import './modules/nav-toggle/nav-toggle';
 import {initToursSwiper} from './modules/swiper-tours/swiper-tours';
 import {initTrainingSwiper} from './modules/swiper-training/swiper-training';
-
+import {initReviewsSwiper} from './modules/swiper-reviews/swiper-reviews';
+import {initAdvantagesSwiper} from './modules/swiper-advantages/swiper-advantages';
+import {initGallerySwiper} from './modules/swiper-gallery/swiper-gallery';
+import {inputValidate} from './modules/input-validate/input-validate';
+import {initLeaflet} from './modules/leaflet/leaflet';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +29,11 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initToursSwiper();
     initTrainingSwiper();
+    initReviewsSwiper();
+    initAdvantagesSwiper();
+    initGallerySwiper();
+    inputValidate();
+    initLeaflet();
 
     initModals();
     const form = new Form();
