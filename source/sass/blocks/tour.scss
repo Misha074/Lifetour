@@ -2,14 +2,13 @@
   position: relative;
 }
 
+.tour--nojs {
+  width: 31.66%;
+  margin-right: 30px;
 
-
-.tour__text-wrapper {
-  position: absolute;
-  width: 100%;
-  padding: 206px 20px 28px;
-  top: 0;
-  color: $color-default-white;
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
 
 .tour__image-wrapper {
@@ -27,3 +26,14 @@
   background-image: $gradient-two;
 }
 
+.tour__text-wrapper {
+  position: absolute;
+  width: 100%;
+  padding: 50px 20px 28px;
+  bottom: 0;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    bottom: -1px;
+  }
+}

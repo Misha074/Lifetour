@@ -1,0 +1,148 @@
+.footer {
+  border-top: 1px solid rgba($color: $color-default-black, $alpha: 0.2);
+}
+
+.footer__container {
+  padding-top: 31px;
+  padding-bottom: 30px;
+
+  @include vp-1199 {
+    padding-top: 44px;
+  }
+
+  @include vp-767 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @include vp-1199 {
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 5px;
+    margin-bottom: 24px;
+  }
+}
+
+.footer__logo-wrapper {
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__logo-wrapper--invert {
+  img {
+    filter: invert(1);
+  }
+}
+
+.footer__home-link {
+  img {
+    @include vp-1199 {
+      width: 118px;
+      height: 34px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+      height: 34px;
+    }
+  }
+}
+
+.footer__nav {
+  margin-left: -5.25%;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+
+  .nav__list {
+    gap: 33px;
+
+    @include vp-1199 {
+      flex-direction: row;
+      gap: 17px;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    @include vp-767 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-flow: column;
+      column-gap: 44%;
+      row-gap: 15px;
+    }
+  }
+
+  .nav__link {
+    @include vp-1199 {
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.footer__contacts {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__contact-link {
+  @include contact-link-ligth-background;
+
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+  display: block;
+}
+
+.footer__socials__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
+  @include vp-767 {
+    margin-left: 5px;
+  }
+}
+
+.footer__social-item {
+  @include social-item;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__privacy-policy {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: 300;
+
+  @include vp-767 {
+    margin: unset;
+    margin-left: 5px;
+  }
+}

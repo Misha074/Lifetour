@@ -22,7 +22,6 @@
 }
 
 .nav__wrapper--closed {
-
   @include vp-1199 {
     display: none;
   }
@@ -126,9 +125,27 @@
   }
 }
 
-.nav__item {}
-
 .nav__link {
+  border: 1px solid transparent;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline-color: $color-default-black;
+  }
+
+  &:active {
+    border-color: $color-default-white;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    color: $color-default-black;
+  }
+
   @include vp-1199 {
     font-weight: 700;
     text-transform: uppercase;
