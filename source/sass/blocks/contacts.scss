@@ -9,7 +9,7 @@
 
   @include vp-767 {
     padding-top: 67px;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 
   p {
@@ -64,15 +64,17 @@
   display: flex;
   flex-direction: column;
   gap: 34px;
+  max-width: 40%;
 
   @include vp-1199 {
     flex-direction: row;
     gap: 43px;
+    max-width: unset;
   }
 
   @include vp-767 {
     flex-direction: column;
-    gap: 28px;
+    gap: 30px;
   }
 }
 
@@ -88,6 +90,14 @@
 
   @include vp-767 {
     gap: 7px;
+  }
+
+  a {
+    display: block;
+  }
+
+  a + a {
+    margin-top: 10px;
   }
 }
 
@@ -137,29 +147,44 @@
 
   @include vp-767 {
     font-size: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 }
 
 .contacts__leaflet {
   position: absolute;
-  bottom: 0;
+  top: -104px;
   right: 0;
   min-height: 324px;
   width: 48.75%;
-  background-image: url("/img/map-desktop.png");
+  background-image: url("/img/map-desktop.webp");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/map-desktop@2x.webp");
+  }
 
   @include vp-1199 {
     min-height: 340px;
     width: 100%;
     position: static;
+    top: unset;
     margin-top: 39px;
+    background-image: url("/img/map-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/map-tablet@2x.webp");
+    }
   }
 
   @include vp-767 {
     min-height: 320px;
     margin-top: 48px;
+    background-image: url("/img/map-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/map-mobile@2x.webp");
+    }
   }
 }

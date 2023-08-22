@@ -2,6 +2,7 @@
   background-image: url("/img/backgrounds/form-question-desktop.webp");
   background-size: cover;
   min-height: 800px;
+  background-color: #535f47;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/backgrounds/form-question-desktop@2x.webp");
@@ -119,23 +120,35 @@
   }
 }
 
+.questions__input:hover {
+  border-color: $color-navy-blue;
+}
+
+.questions__input:active,
+.questions__input:focus-visible {
+  border-color: $color-resolution-blue;
+  color: $color-default-black;
+  outline: none;
+}
+
+.questions__input:disabled {
+  border: 1px solid rgba($color: #0266c1, $alpha: 0.1);
+}
+
+.questions__input--invalid {
+  border-color: $color-error;
+  outline: none;
+}
+
 .questions__input::-webkit-input-placeholder {
   color: $color-default-black;
   opacity: 0.5;
 }
 
-.questions__input:hover {
-  border-color: $color-default-white;
-}
 
-.questions__input:focus-visible {
-  outline: 1px solid $color-default-white;
-  border-color: transparent;
-}
-
-.questions__input--invalid {
-  border-color: rgb(255, 0, 0);
-  outline: none;
+.questions__input:hover::-webkit-input-placeholder {
+  color: $color-navy-blue;
+  opacity: 1;
 }
 
 .questions__input:focus-visible::-webkit-input-placeholder {
@@ -143,12 +156,11 @@
 }
 
 .questions__input--invalid::-webkit-input-placeholder {
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.questions__span {
-  position: absolute;
-  color: rgb(255, 0, 0);
+.questions__input:disabled::-webkit-input-placeholder {
+  color: rgba($color: #0266c1, $alpha: 0.2);
 }
 
 .questions__submit-button {
@@ -166,6 +178,6 @@
 
   @include vp-767 {
     margin-top: 1px;
-    padding: 19px 21px 17px;
+    padding: 19px 21px 15px;
   }
 }
