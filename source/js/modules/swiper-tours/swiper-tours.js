@@ -1,5 +1,9 @@
 let toursButtons = document.querySelector('.tours__button-container');
 
+while (document.querySelector('.tour--nojs') !== null) {
+  document.querySelector('.tour--nojs').classList.remove('tour--nojs');
+}
+
 function initToursSwiper() {
   toursButtons.classList.remove('tours__button-container--nojs');
 

@@ -9,6 +9,7 @@
 .header__main-header {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   position: absolute;
   top: 0;
   width: calc(100% - clamp(71px, $padding-desktop, 120px) * 2);
@@ -18,7 +19,6 @@
   z-index: 2;
 
   padding: 40px 0;
-  align-items: center;
 
   @include vp-1199 {
     width: calc(100% - clamp(45px, $padding-tablet, 100px) * 2);
@@ -137,6 +137,16 @@
   }
 }
 
+.header__home-link {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    filter: drop-shadow(3px 3px $color-navy-blue);
+  }
+}
+
 .header__nav {
   @include vp-1199 {
     order: 1;
@@ -144,6 +154,7 @@
 }
 
 .header__contacts {
+  margin-top: 11px;
   font-size: 18px;
   line-height: 1em;
   font-weight: 600;
@@ -156,6 +167,7 @@
 
   @include vp-767 {
     position: absolute;
+    margin-top: 3px;
     right: 0;
     top: 49px;
     font-size: 14px;
@@ -163,16 +175,25 @@
 }
 
 .header__contact-link {
-  @include contact-link-dark-background;
-
   padding: 13px 0 10px;
   display: block;
 
-  @include vp-1199 {
-    padding: 16px 0;
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+    outline: none;
   }
 
-  @include vp-767 {
-    padding: 8px 0;
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-navy-blue;
+    opacity: 0.1;
+  }
+
+  @include vp-1199 {
+    padding: 5px 0;
   }
 }

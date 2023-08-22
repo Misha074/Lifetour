@@ -21,6 +21,12 @@
   <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-700.woff" as="font" type="font/woff" crossorigin="">
   <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-800.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-desktop.webp">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-desktop@2x.webp">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-tablet.webp">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-tablet@2x.webp">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-mobile.webp">
+  <link rel="preload" as="image" href="img/header-slider/header-background-1-mobile@2x.webp">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="">
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 </head>
@@ -41,6 +47,7 @@
             <svg width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-menu"></use>
             </svg>
+            <span class="visually-hidden">открыть/закрыть меню навигации</span>
             <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-cross"></use>
             </svg>
@@ -48,32 +55,32 @@
           <div class="nav__wrapper nav__wrapper--closed">
             <ul class="nav__list nav__list--nojs">
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#tours-link'" id="tours-link">
                   Туры
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#training-link'" id="training-link">
                   Обучение
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#aboutus-link'" id="aboutus-link">
                   О нас
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#reviews-link'" id="reviews-link">
                   Отзывы
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#gallery-link'" id="gallery-link">
                   Фотографии
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#contacts-link'" id="contacts-link">
                   Контакты
                 </a>
               </li>
@@ -133,7 +140,7 @@
                             <source media="(min-width: 768px)"
                               srcset="img/header-slider/header-video-poster-tablet.webp 1x, img/header-slider/header-video-poster-tablet@2x.webp 2x">
                             <img width="482" height="317" src="./img/header-slider/header-video-poster-desktop.webp"
-                              alt="текст заглушка альта">
+                              alt="текст заглушка альта" loading="lazy">
                           </picture>
                           <button class="hero__play-button" type="button">
                             <span class="visually-hidden">Запустить видео</span>
@@ -180,7 +187,7 @@
                       <source media="(min-width: 768px)"
                         srcset="img/header-slider/header-photos-tablet.webp 1x, img/header-slider/header-photos-tablet@2x.webp 2x">
                       <img width="410" height="459" src="./img/header-slider/header-photos-desktop.webp"
-                        alt="текст заглушка альта">
+                        alt="текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
                 </div>
@@ -234,7 +241,7 @@
           </div>
         </div>
       </section>
-      <section class="tours">
+      <section class="tours" id="tours">
         <div class="tours__container container">
           <h2 class="tours__header" data-shadow="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__slider">
@@ -255,18 +262,6 @@
             <div class="tours__swiper swiper">
               <ul class="swiper-wrapper tours__swiper-wrapper">
                 <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
-                  <div class="tour__image-wrapper">
-                    <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
-                        loading="lazy">
-                    </picture>
-                    <span class="tour__image-mask"></span>
-                  </div>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -276,7 +271,7 @@
                         <span class="tour-info__region-name">Кавказ</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
@@ -284,7 +279,7 @@
                             4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
@@ -292,7 +287,8 @@
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Путешествие вокруг Эльбруса</header>
+                    <header class="tour-info__header">Путешествие вокруг Эльбруса
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -308,20 +304,20 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__image-wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
+                        srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
+                        srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
                         loading="lazy">
                     </picture>
                     <span class="tour__image-mask"></span>
                   </div>
+                </li>
+                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -331,23 +327,24 @@
                         <span class="tour-info__region-name">Алтай</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
                           <span>
-                            14 дней
+                            4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
-                          13 ночей
+                          3 ночи
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Путь к подножию Белухи</header>
+                    <header class="tour-info__header">Путь к подножию Белухи
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -363,20 +360,20 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__image-wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                        srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
+                        srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
                         loading="lazy">
                     </picture>
                     <span class="tour__image-mask"></span>
                   </div>
+                </li>
+                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -386,23 +383,24 @@
                         <span class="tour-info__region-name">Адыгея</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
                           <span>
-                            7 дней
+                            4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
-                          6 ночей
+                          3 ночи
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Через Фишт к&nbsp;Черному морю</header>
+                    <header class="tour-info__header">Через Фишт<br>к Черному морю
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -418,22 +416,21 @@
                       </div>
                     </div>
                   </div>
-                </li>
-
-
-                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__image-wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
+                        srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
+                        srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
                         loading="lazy">
                     </picture>
                     <span class="tour__image-mask"></span>
                   </div>
+                </li>
+
+                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -443,7 +440,7 @@
                         <span class="tour-info__region-name">Кавказ</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
@@ -451,7 +448,7 @@
                             4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
@@ -459,7 +456,8 @@
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Путешествие вокруг Эльбруса22</header>
+                    <header class="tour-info__header">Путешествие вокруг Эльбруса2
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -475,20 +473,20 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__image-wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
+                        srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
+                        srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-1-desktop.webp" alt="Текст заглушка альта"
                         loading="lazy">
                     </picture>
                     <span class="tour__image-mask"></span>
                   </div>
+                </li>
+                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -498,23 +496,24 @@
                         <span class="tour-info__region-name">Алтай</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
                           <span>
-                            14 дней
+                            4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
-                          13 ночей
+                          3 ночи
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Путь к подножию Белухи22</header>
+                    <header class="tour-info__header">Путь к подножию Белухи2
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -530,20 +529,20 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__image-wrapper">
                     <picture>
                       <source media="(min-width: 1200px)"
-                        srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                        srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
-                      <source srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
-                      <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
+                        srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-2-desktop.webp" alt="Текст заглушка альта"
                         loading="lazy">
                     </picture>
                     <span class="tour__image-mask"></span>
                   </div>
+                </li>
+                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -553,23 +552,24 @@
                         <span class="tour-info__region-name">Адыгея</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting tour-info__lasting--days">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-sun"></use>
                           </svg>
                           <span>
-                            7 дней
+                            4 дня
                           </span>
                         </div>
-                        <div class="tour-info__lasting tour-info__lasting--nights">
+                        <div class="tour-info__lasting">
                           <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="./img/sprite.svg#icon-crescent"></use>
                           </svg>
-                          6 ночей
+                          3 ночи
                         </div>
                       </div>
                     </div>
-                    <header class="tour-info__header">Через Фишт к&nbsp;Черному морю22</header>
+                    <header class="tour-info__header">Через Фишт<br>к Черному морю
+                    </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
                         <span class="tour-info__item-title">Сложность:</span>
@@ -584,6 +584,18 @@
                         <span class="tour-info__item-text">до 22 чел.</span>
                       </div>
                     </div>
+                  </div>
+                  <div class="tour__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                      <source srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                      <img width="380" height="412" src="./img/tours/tour-3-desktop.webp" alt="Текст заглушка альта"
+                        loading="lazy">
+                    </picture>
+                    <span class="tour__image-mask"></span>
                   </div>
                 </li>
               </ul>
@@ -597,7 +609,7 @@
           </a>
         </div>
       </section>
-      <section class="training">
+      <section class="training" id="training">
         <div class="training__container container">
           <h2 class="training__header" data-shadow="Обучение">Обучение</h2>
           <p class="training__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых
@@ -925,7 +937,7 @@
           </div>
         </div>
       </section>
-      <section class="aboutus">
+      <section class="aboutus" id="aboutus">
         <div class="aboutus__container container">
           <div class="aboutus__content">
             <h2 class="aboutus__header" data-shadow="О нас">О нас</h2>
@@ -944,7 +956,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="reviews__container container">
           <h2 class="reviews__header" data-shadow="Отзывы">Отзывы</h2>
           <div class="reviews__slider">
@@ -1215,7 +1227,7 @@
           </a>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__container container">
           <h3 class="gallery__header" data-shadow="Фотогалерея">Фотогалерея</h3>
           <p class="gallery__text">
@@ -1264,9 +1276,9 @@
                     <picture>
                       <source media="(min-width: 768px)"
                         srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
-                        <source srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
-                      <img width="298" height="265" src="./img/gallery/photo-3-desktop.webp" alt="Те  кст заглушка альта"
-                        loading="lazy">
+                      <source srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
+                      <img width="298" height="265" src="./img/gallery/photo-3-desktop.webp"
+                        alt="Те  кст заглушка альта" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -1337,9 +1349,9 @@
                     <picture>
                       <source media="(min-width: 768px)"
                         srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
-                        <source srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
-                      <img width="298" height="265" src="./img/gallery/photo-3-desktop.webp" alt="Те  кст заглушка альта"
-                        loading="lazy">
+                      <source srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
+                      <img width="298" height="265" src="./img/gallery/photo-3-desktop.webp"
+                        alt="Те  кст заглушка альта" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -1409,19 +1421,17 @@
               <div class="questions__name">
                 <input class="questions__input" type="text" name="name" id="name" placeholder="Как к вам обращаться?"
                   minlength="1" oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-Я]/g,'');" required>
-                <span class="questions__span questions__span--name" style="display: none;">Введите имя</span>
               </div>
               <div class="questions__phone">
                 <input class="questions__input" type="tel" name="phone" id="phone" placeholder="Телефон"
                   oninput="this.value=this.value.replace(/[^0-9,+,(),-]/g,'');" required>
-                <span class="questions__span questions__span--tel" style="display: none;">Введите номер телефона</span>
               </div>
               <button class="questions__submit-button btn" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__container container">
           <h2 class="contacts__header" data-shadow="Контакты">
             Контакты
@@ -1481,7 +1491,8 @@
           <div class="footer__logo-wrapper footer__logo-wrapper--invert">
             <a class="footer__home-link" href="index.html">
               <img src="./img/logo-header-desktop.png" width="205" height="60"
-                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге.">
+                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
+                loading="lazy">
             </a>
           </div>
           <div class="footer__nav nav">

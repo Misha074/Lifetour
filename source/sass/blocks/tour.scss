@@ -1,19 +1,47 @@
 .tour {
   position: relative;
+  min-height: 412px;
+  display: flex;
+  align-items: end;
 }
 
 .tour--nojs {
   width: 31.66%;
   margin-right: 30px;
 
+  @include vp-1199 {
+    margin-right: 19px;
+    width: 50%;
+  }
+
   @include vp-767 {
     margin-right: 0;
+    width: 100%;
+  }
+}
+
+.tour__text-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 50px 20px 28px;
+  bottom: 0;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    bottom: -1px;
   }
 }
 
 .tour__image-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
   img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -24,16 +52,4 @@
   left: 0;
   right: 0;
   background-image: $gradient-two;
-}
-
-.tour__text-wrapper {
-  position: absolute;
-  width: 100%;
-  padding: 50px 20px 28px;
-  bottom: 0;
-  color: $color-default-white;
-
-  @include vp-1199 {
-    bottom: -1px;
-  }
 }
