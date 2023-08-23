@@ -80,7 +80,6 @@
 }
 
 .tours__header {
-  @include section-header;
   margin-top: 23px;
   margin-bottom: 54px;
 
@@ -95,10 +94,6 @@
   }
 }
 
-.tours__header::before {
-  @include section-header-before;
-}
-
 .tours__slider {
   position: relative;
   margin-bottom: 52px;
@@ -109,7 +104,6 @@
 }
 
 .tours__button-container {
-  @include slider-button-container;
   top: -89px;
 
   @include vp-1199 {
@@ -125,9 +119,6 @@
   display: none;
 }
 
-.tours__button {
-  @include slider-button;
-}
 
 .tours__button--nojs {
   display: none;

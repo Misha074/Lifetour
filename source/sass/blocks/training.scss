@@ -34,7 +34,6 @@
 }
 
 .training__header {
-  @include section-header;
   margin-top: 24px;
   margin-bottom: 32px;
 
@@ -47,11 +46,7 @@
   }
 }
 
-.training__header::before {
-  @include section-header-before;
-}
-
-.training__text {
+.training__header + p {
   margin: 0;
   margin-bottom: 56px;
   font-size: 16px;
@@ -88,7 +83,6 @@
 }
 
 .training__button-container {
-  @include slider-button-container;
   right: 2px;
   top: -7px;
 
@@ -106,10 +100,6 @@
   display: none;
 }
 
-.training__button {
-  @include slider-button;
-}
-
 .training__slide {
   width: 23.16%;
   margin-right: 30px;
@@ -125,10 +115,6 @@
     margin-right: 0;
     min-height: 385px;
   }
-}
-
-.training__more-link {
-  @include section-more-link;
 }
 
 .training__more-link--nojs {

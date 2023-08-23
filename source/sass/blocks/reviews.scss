@@ -14,7 +14,6 @@
 }
 
 .reviews__header {
-  @include section-header;
   margin-bottom: 30px;
   margin-top: 0;
 
@@ -27,16 +26,11 @@
   }
 }
 
-.reviews__header::before {
-  @include section-header-before;
-}
-
 .reviews__slider {
   position: relative;
 }
 
 .reviews__button-container {
-  @include slider-button-container;
   top: -78px;
 
   @include vp-1199 {
@@ -50,10 +44,6 @@
 
 .reviews__button-container--nojs {
   display: none;
-}
-
-.reviews__button {
-  @include slider-button;
 }
 
 .reviews__swiper {
@@ -92,10 +82,6 @@
 .reviews__slide--nojs {
   width: 110%;
   margin: 0 auto;
-}
-
-.reviews__more-link {
-  @include section-more-link;
 }
 
 .reviews__more-link--nojs {

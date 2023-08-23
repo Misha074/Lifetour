@@ -30,7 +30,6 @@
 }
 
 .contacts__header {
-  @include section-header;
   margin-top: 0;
   margin-bottom: 23px;
 
@@ -41,10 +40,6 @@
   @include vp-767 {
     margin-bottom: 11px;
   }
-}
-
-.contacts__header::before {
-  @include section-header-before;
 }
 
 .contacts__content {
