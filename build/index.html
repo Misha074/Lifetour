@@ -38,8 +38,13 @@
       <div class="header__main-header header__main-header--nojs">
         <div class="header__logo-wrapper header__logo-wrapper--invert">
           <a class="header__home-link" href="index.html">
-            <img src="./img/logo-header-desktop.png" width="205" height="62"
-              alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
+              <img width="205" height="62" src="./img/logo-header-desktop.webp"
+                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
+                loading="lazy">
+            </picture>
           </a>
         </div>
         <div class="header__nav nav nav--closed nav--nojs">
@@ -243,16 +248,16 @@
       </section>
       <section class="tours" id="tours">
         <div class="tours__container container">
-          <h2 class="tours__header" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+          <h2 class="tours__header section-header" data-shadow="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__slider">
-            <div class="tours__button-container tours__button-container--nojs">
-              <button class="tours__button tours__button--prev btn" data-swiper-tours-prev
+            <div class="tours__button-container slider-buttons-container tours__button-container--nojs">
+              <button class="tours__button slider-button tours__button--prev btn" data-swiper-tours-prev
                 aria-label="предыдущий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button class="tours__button tours__button--next btn" data-swiper-tours-next
+              <button class="tours__button slider-button tours__button--next btn" data-swiper-tours-next
                 aria-label="следующий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
@@ -271,20 +276,18 @@
                         <span class="tour-info__region-name">Кавказ</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          4 дня
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
                           3 ночи
-                        </div>
+                        </span>
                       </div>
                     </div>
                     <header class="tour-info__header">Путешествие вокруг Эльбруса
@@ -327,20 +330,18 @@
                         <span class="tour-info__region-name">Алтай</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
-                          3 ночи
-                        </div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          14 дней
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
+                          13 ночей
+                        </span>
                       </div>
                     </div>
                     <header class="tour-info__header">Путь к подножию Белухи
@@ -383,20 +384,18 @@
                         <span class="tour-info__region-name">Адыгея</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
-                          3 ночи
-                        </div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          7 дней
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
+                          6 ночей
+                        </span>
                       </div>
                     </div>
                     <header class="tour-info__header">Через Фишт<br>к Черному морю
@@ -430,7 +429,7 @@
                   </div>
                 </li>
 
-                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -440,20 +439,18 @@
                         <span class="tour-info__region-name">Кавказ</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          4 дня
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
                           3 ночи
-                        </div>
+                        </span>
                       </div>
                     </div>
                     <header class="tour-info__header">Путешествие вокруг Эльбруса2
@@ -486,7 +483,7 @@
                     <span class="tour__image-mask"></span>
                   </div>
                 </li>
-                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -496,20 +493,18 @@
                         <span class="tour-info__region-name">Алтай</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
-                          3 ночи
-                        </div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          14 дней
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
+                          13 ночей
+                        </span>
                       </div>
                     </div>
                     <header class="tour-info__header">Путь к подножию Белухи2
@@ -542,7 +537,7 @@
                     <span class="tour__image-mask"></span>
                   </div>
                 </li>
-                <li class="swiper-slide tours__slide tour" tabindex="0" data-slide-swiper-tours>
+                <li class="swiper-slide tours__slide tour tour--nojs" tabindex="0" data-slide-swiper-tours>
                   <div class="tour__text-wrapper tour-info">
                     <div class="tour-info__row tour-info__row--header">
                       <a class="tour-info__region-link btn" href="#">
@@ -552,23 +547,21 @@
                         <span class="tour-info__region-name">Адыгея</span>
                       </a>
                       <div class="tour-info__lasting-wrapper">
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-sun"></use>
-                          </svg>
-                          <span>
-                            4 дня
-                          </span>
-                        </div>
-                        <div class="tour-info__lasting">
-                          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="./img/sprite.svg#icon-crescent"></use>
-                          </svg>
-                          3 ночи
-                        </div>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span>
+                          7 дней
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                        </svg>
+                        <span>
+                          6 ночей
+                        </span>
                       </div>
                     </div>
-                    <header class="tour-info__header">Через Фишт<br>к Черному морю
+                    <header class="tour-info__header">Через Фишт<br>к Черному морю2
                     </header>
                     <div class="tour-info__row tour-info__row--footer">
                       <div class="tour-info__item">
@@ -611,18 +604,18 @@
       </section>
       <section class="training" id="training">
         <div class="training__container container">
-          <h2 class="training__header" data-shadow="Обучение">Обучение</h2>
-          <p class="training__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых
-            десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+          <h2 class="training__header section-header" data-shadow="Обучение">Обучение</h2>
+          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
+            Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
           <div class="training__slider">
-            <div class="training__button-container training__button-container--nojs">
-              <button class="training__button training__button--nojs training__button--prev btn"
+            <div class="training__button-container training__button-container--nojs  slider-buttons-container">
+              <button class="training__button slider-button training__button--nojs training__button--prev btn"
                 data-swiper-training-prev aria-label="предыдущий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button class="training__button training__button--nojs training__button--next btn"
+              <button class="training__button slider-button training__button--nojs training__button--next btn"
                 data-swiper-training-next aria-label="следующий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
@@ -645,25 +638,20 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Александр Прокофьев</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный
-                      человек. Любит природу.</p>
-                  </div>
+                  <span>Александр Прокофьев</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный
+                    человек. Любит природу.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -677,25 +665,20 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Светлана Афиногенова</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Видеть мир вокруг, познавать его опасности, находить друг друга,
-                      становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
-                  </div>
+                  <span>Светлана Афиногенова</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Видеть мир вокруг, познавать его опасности, находить друг друга,
+                    становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -710,25 +693,20 @@
                         loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Надежда Колесниченко</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
-                      и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
-                  </div>
+                  <span>Надежда Колесниченко</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
+                    и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -742,23 +720,19 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Федор Кайгородов</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
-                      побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
-                  </div>
+                  <span>Федор Кайгородов</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
+                    побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp
                 </li>
 
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
@@ -774,25 +748,20 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Александр II Прокофьев</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный
-                      человек. Любит природу.</p>
-                  </div>
+                  <span>Александр Прокофьев2</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный
+                    человек. Любит природу.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -806,25 +775,20 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Светлана Двойникова</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Видеть мир вокруг, познавать его опасности, находить друг друга,
-                      становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
-                  </div>
+                  <span>Светлана Афиногенова2</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Видеть мир вокруг, познавать его опасности, находить друг друга,
+                    становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -839,25 +803,20 @@
                         loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">Надежда Сумасводова</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
-                      и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
-                  </div>
+                  <span>Надежда Колесниченко2</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
+                    и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                 </li>
-
                 <li class="swiper-slide training__slide instructor" tabindex="0" data-slide-swiper-training>
                   <div class="instructor__image-wrapper">
                     <picture>
@@ -871,28 +830,24 @@
                         alt="Текст заглушка альта" loading="lazy">
                     </picture>
                   </div>
-                  <div class="instructor__text-wrapper">
-                    <div class="instructor__header">
-                      <p class="instructor__name">ЛжеФедор Кайгородов</p>
-                      <ul class="instructor__socials-list">
-                        <li class="instructor__social-item">
-                          <a class="instructor__social-link" href="#">
-                            <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
-                            <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                              <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="instructor__info">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
-                      побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
-                  </div>
+                  <span>Федор Кайгородов2</span>
+                  <ul class="instructor__socials-list">
+                    <li class="instructor__social-item social-item">
+                      <a class="instructor__social-link" href="#">
+                        <span class="visually-hidden">ссылка на страницу инструктора Вконтакте</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="instructor__info">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
+                    побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp
                 </li>
               </ul>
             </div>
           </div>
-          <a class="training__more-link" href="#">
+          <a class="training__more-link section-more-link" href="#">
             Перейти ко всем инструкторам
             <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-arrow-right-short"></use>
@@ -940,15 +895,15 @@
       <section class="aboutus" id="aboutus">
         <div class="aboutus__container container">
           <div class="aboutus__content">
-            <h2 class="aboutus__header" data-shadow="О нас">О нас</h2>
+            <h2 class="aboutus__header section-header" data-shadow="О нас">О нас</h2>
             <h3 class="aboutus__title">История компании</h3>
-            <p class="aboutus__paragraph">
+            <p>
               В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp; - походы, поездки, восхождения, нам это
               настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали
               компанию, чтобы показывать людям удивительные места нашей страны.
             </p>
             <h3 class="aboutus__title">Наша цель</h3>
-            <p class="aboutus__paragraph">
+            <p>
               Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все
               организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется
               только наслаждаться незабываемым приключением в&nbsp;приятной компании.
@@ -958,16 +913,16 @@
       </section>
       <section class="reviews" id="reviews">
         <div class="reviews__container container">
-          <h2 class="reviews__header" data-shadow="Отзывы">Отзывы</h2>
+          <h2 class="reviews__header section-header" data-shadow="Отзывы">Отзывы</h2>
           <div class="reviews__slider">
-            <div class="reviews__button-container reviews__button-container--nojs">
-              <button class="reviews__button reviews__button--nojs reviews__button--prev btn" data-swiper-reviews-prev
+            <div class="reviews__button-container reviews__button-container--nojs slider-buttons-container">
+              <button class="reviews__button slider-button reviews__button--nojs reviews__button--prev btn" data-swiper-reviews-prev
                 aria-label="предыдущий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button class="reviews__button reviews__button--nojs reviews__button--next btn" data-swiper-reviews-next
+              <button class="reviews__button slider-button reviews__button--nojs reviews__button--next btn" data-swiper-reviews-next
                 aria-label="следующий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
@@ -1103,7 +1058,7 @@
               </ul>
             </div>
           </div>
-          <a class="reviews__more-link" href="#">
+          <a class="reviews__more-link section-more-link" href="#">
             Показать все отзывы
             <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-arrow-right-short"></use>
@@ -1113,7 +1068,7 @@
       </section>
       <section class="advantages">
         <div class="advantages__container container">
-          <h2 class="advantages__header" data-shadow="Преимущества">Преимущества</h2>
+          <h2 class="advantages__header section-header" data-shadow="Преимущества">Преимущества</h2>
           <div class="advantages__slider">
             <div class="advantages__swiper advantages__swiper--nojs swiper">
               <ul class="swiper-wrapper advantages__swiper-wrapper">
@@ -1123,16 +1078,14 @@
                       <use xlink:href="./img/sprite.svg#icon-shield"></use>
                     </svg>
                   </div>
-                  <div class="advantage__text-wrapper">
-                    <h3 class="advantage__title">
-                      Безопасность и&nbsp;охрана
-                    </h3>
-                    <p class="advantage__text">
-                      Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
-                      Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной
-                      безопасности во&nbsp;время всего тура.
-                    </p>
-                  </div>
+                  <h3 class="advantage__title">
+                    Безопасность и&nbsp;охрана
+                  </h3>
+                  <p>
+                    Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
+                    Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной
+                    безопасности во&nbsp;время всего тура.
+                  </p>
                 </li>
                 <li class="swiper-slide advantages__slide advantage">
                   <div class="advantage__icon-wrapper">
@@ -1140,16 +1093,14 @@
                       <use xlink:href="./img/sprite.svg#icon-crown"></use>
                     </svg>
                   </div>
-                  <div class="advantage__text-wrapper">
-                    <h3 class="advantage__title">
-                      Экспертиза и&nbsp;знания
-                    </h3>
-                    <p class="advantage__text">
-                      Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях
-                      и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках
-                      и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.
-                    </p>
-                  </div>
+                  <h3 class="advantage__title">
+                    Экспертиза и&nbsp;знания
+                  </h3>
+                  <p>
+                    Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях
+                    и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках
+                    и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.
+                  </p>
                 </li>
                 <li class="swiper-slide advantages__slide advantage">
                   <div class="advantage__icon-wrapper">
@@ -1157,16 +1108,14 @@
                       <use xlink:href="./img/sprite.svg#icon-boots"></use>
                     </svg>
                   </div>
-                  <div class="advantage__text-wrapper">
-                    <h3 class="advantage__title">
-                      Оборудование и&nbsp;снаряжение
-                    </h3>
-                    <p class="advantage__text">
-                      Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это
-                      избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает
-                      путешествие более удобным и&nbsp;экономически выгодным.
-                    </p>
-                  </div>
+                  <h3 class="advantage__title">
+                    Оборудование и&nbsp;снаряжение
+                  </h3>
+                  <p>
+                    Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это
+                    избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает
+                    путешествие более удобным и&nbsp;экономически выгодным.
+                  </p>
                 </li>
                 <li class="swiper-slide advantages__slide advantage">
                   <div class="advantage__icon-wrapper">
@@ -1174,16 +1123,14 @@
                       <use xlink:href="./img/sprite.svg#icon-route"></use>
                     </svg>
                   </div>
-                  <div class="advantage__text-wrapper">
-                    <h3 class="advantage__title">
-                      Индивидуальные маршруты
-                    </h3>
-                    <p class="advantage__text">
-                      Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
-                      Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям
-                      и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный опыт.
-                    </p>
-                  </div>
+                  <h3 class="advantage__title">
+                    Индивидуальные маршруты
+                  </h3>
+                  <p>
+                    Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
+                    Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям
+                    и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный опыт.
+                  </p>
                 </li>
                 <li class="swiper-slide advantages__slide advantage">
                   <div class="advantage__icon-wrapper">
@@ -1191,27 +1138,25 @@
                       <use xlink:href="./img/sprite.svg#icon-flower"></use>
                     </svg>
                   </div>
-                  <div class="advantage__text-wrapper">
-                    <h3 class="advantage__title">
-                      Бережное отношение к&nbsp;природе
-                    </h3>
-                    <p class="advantage__text">
-                      Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают
-                      минимальное воздействие на&nbsp;природную среду. Наша компания следует принципу
-                      &laquo;Не&nbsp;оставлять следов&raquo;.
-                    </p>
-                  </div>
+                  <h3 class="advantage__title">
+                    Бережное отношение к&nbsp;природе
+                  </h3>
+                  <p>
+                    Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают
+                    минимальное воздействие на&nbsp;природную среду. Наша компания следует принципу
+                    &laquo;Не&nbsp;оставлять следов&raquo;.
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="advantages__button-container advantages__button-container--nojs">
-              <button class="advantages__button advantages__button--prev btn" data-swiper-advantages-prev
+              <button class="advantages__button slider-button advantages__button--prev btn" data-swiper-advantages-prev
                 aria-label="предыдущий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button class="advantages__button advantages__button--next btn" data-swiper-advantages-next
+              <button class="advantages__button slider-button advantages__button--next btn" data-swiper-advantages-next
                 aria-label="следующий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
@@ -1219,7 +1164,7 @@
               </button>
             </div>
           </div>
-          <a class="advantages__more-link" href="#">
+          <a class="advantages__more-link section-more-link" href="#">
             Показать все преимущества
             <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-arrow-right-short"></use>
@@ -1229,20 +1174,20 @@
       </section>
       <section class="gallery" id="gallery">
         <div class="gallery__container container">
-          <h3 class="gallery__header" data-shadow="Фотогалерея">Фотогалерея</h3>
-          <p class="gallery__text">
+          <h3 class="gallery__header section-header" data-shadow="Фотогалерея">Фотогалерея</h3>
+          <p>
             Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие
             фотографии украсят этот раздел нашего сайта.
           </p>
           <div class="gallery__slider">
-            <div class="gallery__button-container gallery__button-container--nojs">
-              <button class="gallery__button gallery__button--prev btn" data-swiper-gallery-prev
+            <div class="gallery__button-container gallery__button-container--nojs slider-buttons-container">
+              <button class="gallery__button slider-button gallery__button--prev btn" data-swiper-gallery-prev
                 aria-label="предыдущий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button class="gallery__button gallery__button--next btn" data-swiper-gallery-next
+              <button class="gallery__button slider-button gallery__button--next btn" data-swiper-gallery-next
                 aria-label="следующий слайд.">
                 <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
@@ -1399,7 +1344,7 @@
                 </li>
               </ul>
             </div>
-            <a class="gallery__more-link" href="#">
+            <a class="gallery__more-link section-more-link" href="#">
               Показать все фотографии
               <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#icon-arrow-right-short"></use>
@@ -1418,22 +1363,19 @@
           </p>
           <div class="questions__form">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="questions__name">
-                <input class="questions__input" type="text" name="name" id="name" placeholder="Как к вам обращаться?"
-                  minlength="1" oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-Я]/g,'');" required>
-              </div>
-              <div class="questions__phone">
-                <input class="questions__input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                  oninput="this.value=this.value.replace(/[^0-9,+,(),-]/g,'');" required>
-              </div>
-              <button class="questions__submit-button btn" type="submit">Отправить</button>
+              <input type="text" name="name" id="name" placeholder="Как к вам обращаться?"
+                aria-label="Введите ваше имя" minlength="1"
+                oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-Я]/g,'');" required>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон"
+                aria-label="Введите ваш телефон" oninput="this.value=this.value.replace(/[^0-9,+,(),-]/g,'');" required>
+              <button class="btn" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </section>
       <section class="contacts" id="contacts">
         <div class="contacts__container container">
-          <h2 class="contacts__header" data-shadow="Контакты">
+          <h2 class="contacts__header section-header" data-shadow="Контакты">
             Контакты
           </h2>
           <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем
@@ -1490,9 +1432,13 @@
         <div class="footer__row">
           <div class="footer__logo-wrapper footer__logo-wrapper--invert">
             <a class="footer__home-link" href="index.html">
-              <img src="./img/logo-header-desktop.png" width="205" height="60"
-                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
-                loading="lazy">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
+                <img width="205" height="60" src="./img/logo-header-desktop.webp"
+                  alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
+                  loading="lazy">
+              </picture>
             </a>
           </div>
           <div class="footer__nav nav">
@@ -1530,29 +1476,34 @@
             </ul>
           </div>
           <div class="footer__contacts">
-            <a class="footer__contact-link" href="tel:+78007253232">8 800 725 32 32</a>
+            <a class="footer__contact-link" href="tel:+78007253232">
+              8 800 725 32 32
+            </a>
           </div>
         </div>
         <ul class="footer__socials__list">
-          <li class="footer__social-item">
-            <a>
+          <li class="footer__social-item social-item">
+            <a href="#">
               <svg width="16" height="9">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
+              <span class="visually-hidden">Страница lifetour Вконтакте</span>
             </a>
           </li>
-          <li class="footer__social-item">
-            <a>
+          <li class="footer__social-item social-item">
+            <a href="#">
               <svg width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-ok"></use>
               </svg>
+              <span class="visually-hidden">Страница lifetour в одноклассниках</span>
             </a>
           </li>
-          <li class="footer__social-item">
-            <a>
+          <li class="footer__social-item social-item">
+            <a href="#">
               <svg width="14" height="15">
                 <use xlink:href="img/sprite.svg#icon-reddit"></use>
               </svg>
+              <span class="visually-hidden">Страница lifetour на реддит</span>
             </a>
           </li>
         </ul>
