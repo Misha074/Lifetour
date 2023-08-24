@@ -165,6 +165,14 @@
   }
 }
 
+.hero__slide-special-content--photos {
+  img {
+    @include vp-1199 {
+      height: 339px;
+    }
+  }
+}
+
 .hero__stretch-container {
   position: relative;
   padding-bottom: 56.25%;

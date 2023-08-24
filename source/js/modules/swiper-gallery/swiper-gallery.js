@@ -1,7 +1,6 @@
 let galleryButtons = document.querySelector('.gallery__button-container');
 let galleryLink = document.querySelector('.gallery__more-link');
 
-
 function initGallerySwiper() {
   galleryButtons.classList.remove('gallery__button-container--nojs');
   galleryLink.classList.add('gallery__more-link--nojs');

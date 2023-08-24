@@ -19,6 +19,7 @@
 .instructor__image-wrapper {
   margin-bottom: 16px;
   grid-column: span 2;
+  height: fit-content;
 
   img {
     @include vp-1199 {
@@ -56,8 +57,14 @@
   font-size: 12px;
   line-height: 16px;
   grid-column: span 2;
+  min-height: 64px;
 
   @include vp-1199 {
     line-height: 18px;
+    min-height: 108px;
+  }
+
+  @include vp-767 {
+    min-height: 72px;
   }
 }
