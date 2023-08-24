@@ -28,76 +28,75 @@
   <link rel="preload" as="image" href="img/header-slider/header-background-1-mobile.webp">
   <link rel="preload" as="image" href="img/header-slider/header-background-1-mobile@2x.webp">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="">
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 </head>
 
 <body>
   <div class="wrapper" style="overflow: hidden;">
-    <header class="header">
-      <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
-      <div class="header__main-header header__main-header--nojs">
-        <div class="header__logo-wrapper header__logo-wrapper--invert">
-          <a class="header__home-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
-              <img width="205" height="62" src="./img/logo-header-desktop.webp"
-                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
-                loading="lazy">
-            </picture>
-          </a>
-        </div>
-        <div class="header__nav nav nav--closed nav--nojs">
-          <button class="nav__toggle" type="button">
-            <svg width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-menu"></use>
-            </svg>
-            <span class="visually-hidden">открыть/закрыть меню навигации</span>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <div class="nav__wrapper nav__wrapper--closed">
-            <ul class="nav__list nav__list--nojs">
-              <li class="nav__item">
-                <a class="nav__link" href="#tours-link'" id="tours-link">
-                  Туры
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#training-link'" id="training-link">
-                  Обучение
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#aboutus-link'" id="aboutus-link">
-                  О нас
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#reviews-link'" id="reviews-link">
-                  Отзывы
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#gallery-link'" id="gallery-link">
-                  Фотографии
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#contacts-link'" id="contacts-link">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+    <div class="header-slider-wrapper">
+      <header class="header">
+        <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+        <div class="header__main-header header__main-header--nojs">
+          <div class="header__logo-wrapper header__logo-wrapper--invert">
+            <a class="header__home-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
+                <img width="205" height="62" srcset="./img/logo-header-desktop.png 1x, img/logo-header-desktop@2x.png 2x"
+                  alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
+                  loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="header__nav nav nav--closed nav--nojs">
+            <button class="nav__toggle" type="button">
+              <svg width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-menu"></use>
+              </svg>
+              <span class="visually-hidden">открыть/закрыть меню навигации</span>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="nav__wrapper nav__wrapper--closed">
+              <ul class="nav__list nav__list--nojs">
+                <li class="nav__item">
+                  <a class="nav__link" href="#tours-link'" id="tours-link">
+                    Туры
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#training-link'" id="training-link">
+                    Обучение
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#aboutus-link'" id="aboutus-link">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#reviews-link'" id="reviews-link">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#gallery-link'" id="gallery-link">
+                    Фотографии
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contacts-link'" id="contacts-link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__contacts">
+            <a class="header__contact-link" href="tel:+78007253232">8 800 725 32 32</a>
           </div>
         </div>
-        <div class="header__contacts">
-          <a class="header__contact-link" href="tel:+78007253232">8 800 725 32 32</a>
-        </div>
-      </div>
-    </header>
-    <main>
+      </header>
       <section class="hero">
         <div class="hero__slider">
           <div class="hero__swiper swiper">
@@ -105,7 +104,6 @@
               <li class="swiper-slide hero__slide hero__slide--1" tabindex="0" data-slide-swiper-hero>
                 <div class="hero__slide-info container">
                   <h2 class="hero__slide-title">
-                    <!--Здесь и в последующих заголовках слайдов преднамеренно вставляю бр. Такие переносы расставлены дизайнером на всех версиях макета. Ничего поддерживать не нужно, так что сложностей не возникнет-->
                     Захватывающие<br>
                     вершины Кавказа
                   </h2>
@@ -185,7 +183,7 @@
                       Средняя сложность
                     </span>
                   </div>
-                  <div class="hero__slide-special-content">
+                  <div class="hero__slide-special-content hero__slide-special-content--photos">
                     <picture>
                       <source media="(min-width: 1200px)"
                         srcset="img/header-slider/header-photos-desktop.webp 1x, img/header-slider/header-photos-desktop@2x.webp 2x">
@@ -246,6 +244,222 @@
           </div>
         </div>
       </section>
+    </div>
+
+
+    <!-- <header class="header">
+      <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+      <div class="header__main-header header__main-header--nojs">
+        <div class="header__logo-wrapper header__logo-wrapper--invert">
+          <a class="header__home-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
+              <img width="205" height="62" srcset="./img/logo-header-desktop.png 1x, img/logo-header-desktop@2x.png 2x"
+                alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
+                loading="lazy">
+            </picture>
+          </a>
+        </div>
+        <div class="header__nav nav nav--closed nav--nojs">
+          <button class="nav__toggle" type="button">
+            <svg width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-menu"></use>
+            </svg>
+            <span class="visually-hidden">открыть/закрыть меню навигации</span>
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="nav__wrapper nav__wrapper--closed">
+            <ul class="nav__list nav__list--nojs">
+              <li class="nav__item">
+                <a class="nav__link" href="#tours-link'" id="tours-link">
+                  Туры
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#training-link'" id="training-link">
+                  Обучение
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#aboutus-link'" id="aboutus-link">
+                  О нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews-link'" id="reviews-link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery-link'" id="gallery-link">
+                  Фотографии
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts-link'" id="contacts-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <a class="header__contact-link" href="tel:+78007253232">8 800 725 32 32</a>
+        </div>
+      </div>
+    </header> -->
+    <main>
+      <!-- <section class="hero">
+        <div class="hero__slider">
+          <div class="hero__swiper swiper">
+            <ul class="swiper-wrapper hero__swiper-wrapper">
+              <li class="swiper-slide hero__slide hero__slide--1" tabindex="0" data-slide-swiper-hero>
+                <div class="hero__slide-info container">
+                  <h2 class="hero__slide-title">
+                    Здесь и в последующих заголовках слайдов преднамеренно вставляю бр. Такие переносы расставлены дизайнером на всех версиях макета. Ничего поддерживать не нужно, так что сложностей не возникнет
+                    Захватывающие<br>
+                    вершины Кавказа
+                  </h2>
+                  <p>
+                    В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                    восход на&nbsp;вершину горы Чегет.
+                  </p>
+                  <a class="hero__slide-more-link btn" href="#">
+                    Смотреть тур
+                  </a>
+                  <div class="hero__slide-tour-details">
+                    <span>
+                      <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      6 дней/5 ночей
+                    </span>
+                    <span>
+                      <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      Высокая сложность
+                    </span>
+                  </div>
+                  <div class="hero__slide-special-content">
+                    <div class="hero__stretch-container">
+                      <div class="hero__video-wrapper" id="player">
+                        <div class="hero__iframe-wrapper">
+                          <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?mute=1" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="hero__poster-wrapper hero__poster-wrapper--nojs">
+                          <picture>
+                            <source media="(min-width: 1200px)"
+                              srcset="img/header-slider/header-video-poster-desktop.webp 1x, img/header-slider/header-video-poster-desktop@2x.webp 2x">
+                            <source media="(min-width: 768px)"
+                              srcset="img/header-slider/header-video-poster-tablet.webp 1x, img/header-slider/header-video-poster-tablet@2x.webp 2x">
+                            <img width="482" height="317" src="./img/header-slider/header-video-poster-desktop.webp"
+                              alt="текст заглушка альта" loading="lazy">
+                          </picture>
+                          <button class="hero__play-button" type="button">
+                            <span class="visually-hidden">Запустить видео</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide hero__slide hero__slide--2" tabindex="0" data-slide-swiper-hero>
+                <div class="hero__slide-info container">
+                  <h2 class="hero__slide-title">
+                    Невероятная<br>
+                    природа Камчатки
+                  </h2>
+                  <p>
+                    Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                    нетронутых
+                    уголков дикой природы в мире.
+                  </p>
+                  <a class="hero__slide-more-link btn" href="#">
+                    Смотреть тур
+                  </a>
+                  <div class="hero__slide-tour-details">
+                    <span>
+                      <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      9 дней/10 ночей
+                    </span>
+                    <span>
+                      <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      Средняя сложность
+                    </span>
+                  </div>
+                  <div class="hero__slide-special-content hero__slide-special-content--photos">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/header-slider/header-photos-desktop.webp 1x, img/header-slider/header-photos-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/header-slider/header-photos-tablet.webp 1x, img/header-slider/header-photos-tablet@2x.webp 2x">
+                      <img width="410" height="459" src="./img/header-slider/header-photos-desktop.webp"
+                        alt="текст заглушка альта" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide hero__slide hero__slide--3" tabindex="0" data-slide-swiper-hero>
+                <div class="hero__slide-info container">
+                  <h2 class="hero__slide-title">
+                    Магические пейзажи<br>
+                    Алтайского Края
+                  </h2>
+                  <p>
+                    Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух
+                    ландшафтов Алтайских гор.
+                  </p>
+                  <a class="hero__slide-more-link btn" href="#">
+                    Смотреть тур
+                  </a>
+                  <div class="hero__slide-tour-details">
+                    <span>
+                      <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-crescent"></use>
+                      </svg>
+                      8 дней/7 ночей
+                    </span>
+                    <span>
+                      <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      Легкая сложность
+                    </span>
+                  </div>
+                  <div class="hero__slide-special-content">
+                    <div class="hero__audio-wrapper audio">
+                      <audio controls>
+                        <source src="./img/audio/Depeche-Mode-Precious.mp3" type="audio/mp3">
+                        <p>
+                          Ваш браузер не поддерживает встроенное аудио. Попробуйте послушать
+                          <a href="https://music.yandex.ru/album/25474374?dir=desc&activeTab=track-list"></a> файл.
+                        </p>
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__pagination-wrapper container">
+            <div class="hero__slider-pagination swiper-pagination">
+            </div>
+          </div>
+        </div>
+      </section> -->
       <section class="tours" id="tours">
         <div class="tours__container container">
           <h2 class="tours__header section-header" data-shadow="Ближайшие туры">Ближайшие туры</h2>
@@ -1435,7 +1649,7 @@
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/logo-header-desktop.webp 1x, img/logo-header-desktop@2x.webp 2x">
-                <img width="205" height="60" src="./img/logo-header-desktop.webp"
+                  <img width="205" height="60" srcset="./img/logo-header-desktop.png 1x, img/logo-header-desktop@2x.png 2x"
                   alt="Логотип компании Lifeour предаставляет собой две вершины горы расположенные в круге."
                   loading="lazy">
               </picture>
@@ -1511,6 +1725,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin="" defer></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

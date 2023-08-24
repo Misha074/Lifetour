@@ -25,6 +25,7 @@
     min-height: 621px;
 
     @media (min-resolution: 2dppx) {
+      background-size: cover;
       background-image: url("/img/backgrounds/form-question-mobile@2x.webp");
     }
   }
@@ -37,7 +38,7 @@
   text-align: center;
 
   @include vp-1199 {
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 50px;
   }
 

@@ -8,7 +8,8 @@ import {initReviewsSwiper} from './modules/swiper-reviews/swiper-reviews';
 import {initAdvantagesSwiper} from './modules/swiper-advantages/swiper-advantages';
 import {initGallerySwiper} from './modules/swiper-gallery/swiper-gallery';
 import {inputValidate} from './modules/input-validate/input-validate';
-import {initLeaflet} from './modules/leaflet/leaflet';
+// import {initLeaflet} from './modules/leaflet/leaflet';
+import './modules/leaflet/leaflet';
 import './modules/scroll/scroll';
 // ---------------------------------
 
@@ -32,6 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
     initAdvantagesSwiper();
     initGallerySwiper();
     inputValidate();
-    initLeaflet();
   });
 });

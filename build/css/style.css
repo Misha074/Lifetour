@@ -2320,6 +2320,7 @@ button,
   padding: 20px 19.9px 20px 20px;
   -webkit-box-shadow: 0 0 30px rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px rgba(28, 51, 116, 0.1);
+  height: auto;
 }
 
 .training__more-link--nojs {
@@ -2346,6 +2347,9 @@ button,
   margin-bottom: 16px;
   -ms-grid-column-span: 2;
   grid-column: span 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .instructor__socials-list {
@@ -2366,6 +2370,7 @@ button,
   line-height: 16px;
   -ms-grid-column-span: 2;
   grid-column: span 2;
+  min-height: 64px;
 }
 
 .training-process__title {
@@ -3880,6 +3885,10 @@ button,
     transform: none;
   }
 
+  .hero__slide-special-content--photos img {
+    height: 339px;
+  }
+
   .hero__play-button {
     top: 50%;
   }
@@ -3931,9 +3940,13 @@ button,
     gap: 6.4%;
   }
 
+  .tour-info__lasting-wrapper span + svg {
+    margin-left: 20px;
+  }
+
   .tour-info__region-link {
     width: 34.17%;
-    min-width: 92px;
+    min-width: 97px;
     max-width: 110px;
     padding-right: 8px;
   }
@@ -3983,6 +3996,7 @@ button,
 
   .instructor__info {
     line-height: 18px;
+    min-height: 108px;
   }
 
   .training-process__title {
@@ -4196,7 +4210,7 @@ button,
   }
 
   .questions__container {
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 50px;
   }
 
@@ -4458,6 +4472,10 @@ button,
     font-size: 14px;
   }
 
+  .nav--closed .nav__toggle {
+    margin-top: -21px;
+  }
+
   .nav--closed.nav--nojs .nav__toggle {
     margin-top: -26px;
   }
@@ -4566,7 +4584,6 @@ button,
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    min-width: 97px;
   }
 
   .tour-info__header {
@@ -4626,6 +4643,10 @@ button,
 
   .instructor__social-item {
     margin-right: 3px;
+  }
+
+  .instructor__info {
+    min-height: 72px;
   }
 
   .training-process__title {
@@ -4984,6 +5005,7 @@ button,
   }
 
   .questions {
+    background-size: cover;
     background-image: url("/img/backgrounds/form-question-mobile@2x.webp");
   }
 
