@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    margin: 39px 0 16px 4px;
+    margin: 28px 0 16px 4px;
   }
 }
 
@@ -39,16 +39,24 @@
 
 .training-process__item {
   display: flex;
-  align-items: center;
+  align-items: end;
   position: relative;
 
   svg {
     margin-right: 15px;
-    margin-bottom: 2px;
+    margin-bottom: 30px;
     flex-shrink: 0;
 
+    @include vp-1199 {
+      margin-bottom: 26px;
+      margin-right: 16px;
+    }
+
     @include vp-767 {
-      margin-right: 8px;
+      margin-bottom: 21px;
+      margin-right: 12px;
+      width: 19px;
+      height: auto;
     }
   }
 }

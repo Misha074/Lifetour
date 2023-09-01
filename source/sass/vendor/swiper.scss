@@ -616,3 +616,17 @@ button.swiper-pagination-bullet {
           backface-visibility: hidden;
   overflow: hidden;
 }
+
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden
+}
+
+// .swiper-slide:focus-visible {
+//   border: 5px solid tomato;
+// }
+
+.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible;
+}

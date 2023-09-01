@@ -1,9 +1,11 @@
+import {closeMenu} from '../nav-toggle/nav-toggle';
 
 const tours = document.getElementById('tours');
 let toursLink = document.getElementById('tours-link');
 
 toursLink.addEventListener('click', () => {
   tours.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });
 
 
@@ -12,6 +14,7 @@ let trainingLink = document.getElementById('training-link');
 
 trainingLink.addEventListener('click', () => {
   training.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });
 
 
@@ -20,6 +23,7 @@ let aboutusLink = document.getElementById('aboutus-link');
 
 aboutusLink.addEventListener('click', () => {
   aboutus.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });
 
 
@@ -28,6 +32,7 @@ let reviewsLink = document.getElementById('reviews-link');
 
 reviewsLink.addEventListener('click', () => {
   reviews.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });
 
 
@@ -36,6 +41,7 @@ let galleryLink = document.getElementById('gallery-link');
 
 galleryLink.addEventListener('click', () => {
   gallery.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });
 
 const contacts = document.getElementById('contacts');
@@ -43,4 +49,5 @@ let contactsLink = document.getElementById('contacts-link');
 
 contactsLink.addEventListener('click', () => {
   contacts.scrollIntoView({behavior: 'smooth'}, {block: 'center', inline: 'center'});
+  closeMenu();
 });

@@ -12,6 +12,7 @@ function initTrainingSwiper() {
       prevEl: '.training__button--prev',
     },
 
+    watchSlidesProgress: true,
     direction: 'horizontal',
     slidesPerView: 1,
     loop: false,

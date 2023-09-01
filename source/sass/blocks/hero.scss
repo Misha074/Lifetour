@@ -4,6 +4,7 @@
 
 .hero__slide {
   min-height: 800px;
+  height: auto;
   padding-top: 182px;
   padding-bottom: 80px;
   background-size: cover;
@@ -21,52 +22,76 @@
 
 .hero__slide--1 {
   background-color: #6186b0;
-  background-image: url("/img/header-slider/header-background-1-desktop.webp");
+  background-image: url("../img/header-slider/header-background-1-desktop.webp");
   background-position: bottom;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/img/header-slider/header-background-1-desktop@2x.webp");
+  @include retina {
+    background-image: url("../img/header-slider/header-background-1-desktop@2x.webp");
   }
 
   @include vp-1199 {
-    background-image: url("/img/header-slider/header-background-1-tablet.webp");
+    background-image: url("../img/header-slider/header-background-1-tablet.webp");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/header-slider/header-background-1-tablet@2x.webp");
+    @include retina {
+      background-image: url("../img/header-slider/header-background-1-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/header-slider/header-background-1-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/header-slider/header-background-1-mobile@2x.webp");
     }
   }
 }
 
 .hero__slide--2 {
   background-color: #467aa2;
-  background-image: url("/img/header-slider/header-background-2-desktop.webp");
+  background-image: url("../img/header-slider/header-background-2-desktop.webp");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/img/header-slider/header-background-2-desktop@2x.webp");
+  @include retina {
+    background-image: url("../img/header-slider/header-background-2-desktop@2x.webp");
   }
 
   @include vp-1199 {
-    background-image: url("/img/header-slider/header-background-2-tablet.webp");
+    background-image: url("../img/header-slider/header-background-2-tablet.webp");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/header-slider/header-background-2-tablet@2x.webp");
+    @include retina {
+      background-image: url("../img/header-slider/header-background-2-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/header-slider/header-background-2-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/header-slider/header-background-2-mobile@2x.webp");
     }
   }
 }
 
 .hero__slide--3 {
   background-color: #293a2b;
-  background-image: url("/img/header-slider/header-background-3-desktop.webp");
+  background-image: url("../img/header-slider/header-background-3-desktop.webp");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/img/header-slider/header-background-3-desktop@2x.webp");
+  @include retina {
+    background-image: url("../img/header-slider/header-background-3-desktop@2x.webp");
   }
 
   @include vp-1199 {
-    background-image: url("/img/header-slider/header-background-3-tablet.webp");
+    background-image: url("../img/header-slider/header-background-3-tablet.webp");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/header-slider/header-background-3-tablet@2x.webp");
+    @include retina {
+      background-image: url("../img/header-slider/header-background-3-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/header-slider/header-background-3-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/header-slider/header-background-3-mobile@2x.webp");
     }
   }
 }
@@ -74,6 +99,7 @@
 .hero__slide-info {
   color: $color-default-white;
   position: relative;
+  z-index: 2;
 
   @include vp-1199 {
     display: flex;
@@ -119,10 +145,12 @@
   @include vp-1199 {
     min-width: 206px;
     margin-bottom: 50px;
+    padding: 21px 20px 19px;
   }
 
   @include vp-767 {
     min-width: 180px;
+    padding: 18px 20px 16px;
   }
 }
 
@@ -297,4 +325,12 @@
   .swiper-pagination-bullet-active {
     background-color: $color-white;
   }
+}
+
+.hero__slide-mask {
+  background-image: $gradient-one;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }

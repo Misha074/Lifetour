@@ -14,7 +14,7 @@ function initAdvantagesSwiper() {
         nextEl: '.advantages__button--next',
         prevEl: '.advantages__button--prev',
       },
-
+      watchSlidesProgress: true,
       direction: 'horizontal',
       slidesPerView: 1,
       loop: true,

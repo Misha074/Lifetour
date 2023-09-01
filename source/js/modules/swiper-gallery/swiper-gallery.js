@@ -11,6 +11,7 @@ function initGallerySwiper() {
       nextEl: '.gallery__button--next',
       prevEl: '.gallery__button--prev',
     },
+    watchSlidesProgress: true,
     direction: 'horizontal',
     slidesPerView: 'auto',
     loop: false,
