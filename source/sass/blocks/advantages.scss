@@ -9,12 +9,12 @@
   top: -195px;
   width: 1170px;
   height: 391px;
-  background-image: url("/img/backgrounds/background-5-desktop.webp");
+  background-image: url("../img/backgrounds/background-5-desktop.webp");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/backgrounds/background-5-desktop@2x.webp");
+    background-image: url("../img/backgrounds/background-5-desktop@2x.webp");
   }
 
   @include vp-1199 {
@@ -29,12 +29,12 @@
   top: -10px;
   width: 788px;
   height: 263px;
-  background-image: url("/img/backgrounds/background-4-desktop.webp");
+  background-image: url("../img/backgrounds/background-4-desktop.webp");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/backgrounds/background-4-desktop@2x.webp");
+    background-image: url("../img/backgrounds/background-4-desktop@2x.webp");
   }
 
   @include vp-1199 {
@@ -47,6 +47,7 @@
   padding-bottom: 47px;
 
   @include vp-1199 {
+    padding-top: 46px;
     padding-bottom: 30px;
   }
 

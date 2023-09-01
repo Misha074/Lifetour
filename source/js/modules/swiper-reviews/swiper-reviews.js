@@ -13,7 +13,7 @@ function initReviewsSwiper() {
       nextEl: '.reviews__button--next',
       prevEl: '.reviews__button--prev',
     },
-
+    watchSlidesProgress: true,
     direction: 'horizontal',
     slidesPerView: 1,
     loop: false,

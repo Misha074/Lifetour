@@ -14,6 +14,7 @@ function initToursSwiper() {
       prevEl: '.tours__button--prev',
     },
 
+    watchSlidesProgress: true,
     direction: 'horizontal',
     slidesPerView: 1,
     loop: false,

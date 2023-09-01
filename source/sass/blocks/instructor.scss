@@ -1,6 +1,7 @@
 .instructor {
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: min-content min-content;
 
   span {
     font-size: 14px;
@@ -27,7 +28,7 @@
     }
 
     @include vp-767 {
-      width: 100%;
+      width: 250px;
     }
   }
 }

@@ -10,7 +10,7 @@ function initHeroSwiper() {
       el: '.swiper-pagination',
       clickable: true,
     },
-
+    watchSlidesProgress: true,
     direction: 'horizontal',
     slidesPerView: 1,
     loop: true,

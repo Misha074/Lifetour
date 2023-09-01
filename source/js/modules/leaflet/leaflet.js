@@ -31,8 +31,6 @@ function initLeaflet() {
   );
 
   marker.addTo(map);
-
-
 }
 
 const options = {
@@ -46,7 +44,6 @@ const trueCallback = function (entries, observer) {
 
     if (isIntersecting) {
       initLeaflet();
-      console.log(1);
       observer.unobserve(entry.target);
     }
   });
