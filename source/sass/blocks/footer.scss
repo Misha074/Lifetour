@@ -112,8 +112,18 @@
     }
   }
 
+  .nav__link:hover {
+    color: $color-elephant;
+  }
+
   .nav__link:focus {
     border-color: $color-default-black;
+    color: $color-elephant;
+  }
+
+  .nav__link:active {
+    border-color: transparent;
+    color: $color-elephant;
   }
 }
 
