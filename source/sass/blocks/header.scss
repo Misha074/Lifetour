@@ -75,15 +75,11 @@
 
     overflow: auto;
     max-height: 100vh;
-    padding-top: 0;
-    border-top: 30px solid transparent;
   }
 
   @include vp-767 {
     width: 100%;
-    padding: 21px clamp(15px, $padding-mobile, 45px) 35px;
-    padding-top: 0;
-    border-top: 21px solid transparent;
+    padding: 21px clamp(15px, $padding-mobile, 45px) 50px;
   }
 
   a {
@@ -167,6 +163,12 @@
 
       .nav__item:not(:last-child) {
         margin-bottom: 26px;
+      }
+    }
+
+    @include vp-767 {
+      .nav__item:not(:last-child) {
+        margin-bottom: 22px;
       }
     }
   }

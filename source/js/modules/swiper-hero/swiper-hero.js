@@ -1,3 +1,10 @@
+let podcast = document.getElementById('podcast');
+
+let buttons = podcast.querySelector('.buttons_PqSoC');
+
+
+setTimeout(console.log(buttons), 11500);
+
 function initHeroSwiper() {
   let heroSwiper = new Swiper('.hero__swiper', {
     // Стрелки переключения слайдов
@@ -22,6 +29,12 @@ function initHeroSwiper() {
       },
     },
   });
+
+  heroSwiper.on('slideChange', function () {
+    // eslint-disable-next-line no-console
+    console.log('slide changed');
+  });
+
   return heroSwiper;
 }
 
